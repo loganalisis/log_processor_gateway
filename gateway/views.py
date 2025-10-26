@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-LOG_SERVICE_URL = os.getenv("LOG_SERVICE_URL", "http://localhost:8000")
-ANALYTICS_SERVICE_URL = os.getenv("ANALYTICS_SERVICE_URL", "http://localhost:8001")
+LOG_SERVICE_URL = os.getenv("LOG_SERVICE_URL", "http://log-processor-v2-shubham-roy021-dev.apps.rm3.7wse.p1.openshiftapps.com")
+ANALYTICS_SERVICE_URL = os.getenv("ANALYTICS_SERVICE_URL", "http://analytics-service-v2-shubham-roy021-dev.apps.rm3.7wse.p1.openshiftapps.com")
 
 @api_view(["POST"])
 def upload_log(request):
